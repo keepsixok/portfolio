@@ -1,14 +1,15 @@
 "use client"
 import React, { useState } from 'react'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+
 const Nav = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(true)
   const handleNav = () => {
     setNav(!nav)
   }
   return (
 
-    <div id="nav-container" className='flex items-center justify-between first:w-full h-24 border-b-2 border-black px-4'>
+    <div id="nav-container" className='flex items-center justify-between first:w-full h-24 border-b border-black px-4'>
         
     {/* Title / Logo */}
     <div>
@@ -25,10 +26,10 @@ const Nav = () => {
     </div>
 
     {/* Mobile Menu */}
-    <div onClick={handleNav}>
-    {!nav ? <AiOutlineClose /> : <AiOutlineMenu />}
+    <div onClick={handleNav} className='black md:hidden'>
+    {!nav ? <AiOutlineClose size={22} /> : <AiOutlineMenu size={22} />}
     </div>
-    <div className={!nav ? 'fixed top-0 left-0 w-[60%] bg-gray-400 h-full ease-in-out duration-500' : 'fixed h-full top-0 left-[-100%] ease-in-out duration-500' }>
+    <div className={!nav ? 'fixed top-0 left-0 w-[60%] border-r border-black bg-white h-full ease-in-out duration-500' : 'fixed h-full top-0 left-[-100%] ease-in-out duration-500' }>
     <h1 className='text-2xl font-bold m-4 pt-4'>Mitchell</h1>
     <ul className='uppercase p-4'>
         <li className='p-4 border-b border-black'>Home</li>
