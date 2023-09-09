@@ -1,9 +1,9 @@
-import Hero from './components/Hero'
+import Avatar from './components/Avatar'
 
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <Avatar />
     </div>
   )
 }

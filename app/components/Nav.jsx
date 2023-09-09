@@ -7,6 +7,7 @@ const Nav = () => {
   const handleNav = () => {
     setNav(!nav)
   }
+
   return (
 
     <div id="nav-container" className='flex items-center justify-between w-full h-24 border-b border-black px-4'>
@@ -14,8 +15,7 @@ const Nav = () => {
 
     {/* Title / Logo */}
     <div>
-    {/* {nav ? <h1 className='text-2xl font-bold'>Mitchell</h1> : <h1 className='hidden'>Mitchell</h1>} */}
-    <h1 className='uppercase text-2xl font-bold'>Mitchell</h1>
+    <h1 className='uppercase text-2xl font-bold'>ML</h1>
     </div>
 
     {/* Large Screen Menu */}
