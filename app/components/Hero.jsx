@@ -17,9 +17,7 @@ const Hero = () => {
             </div>
         </div>
 
-        <div>
-            <h1 className='text-4xl font-bold uppercase pt-8'>Projects</h1>
-        </div>
+        
         
     </div>
   )
