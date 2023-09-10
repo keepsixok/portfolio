@@ -6,7 +6,7 @@ const roboto = Roboto({weight:'300', subsets:['latin']})
 const Avatar = () => {
 
   return (
-    <div className='flex-row w-full border-b py-8 border-black text-center bg-gradient-to-b from-black from-50% to-50%'>
+    <div className='flex-row  pt-8 pb-4 w-[97%]  mx-auto rounded-t-2xl text-center bg-gradient-to-b from-black from-50% to-50%'>
         <Image className='rounded-full border-[20px] border-black ring-8 ring-white mx-auto' src="/avatar.png" width={250} height={250} alt="avatar" />
     </div>
      

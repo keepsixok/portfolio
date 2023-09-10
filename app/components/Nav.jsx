@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
 
-    <div id="nav-container" className='flex items-center justify-between w-full h-24 border-b border-black px-4'>
+    <div id="nav-container" className='flex items-center  mx-auto justify-between w-full h-24 px-4 md:w-[768px] lg:w-[1024px]'>
         
 
     {/* Title / Logo */}
