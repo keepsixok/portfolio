@@ -3,23 +3,40 @@ const Projects = () => {
   return (
 
     <div className='flex flex-wrap justify-center w-full px-4'>
-    <div>
+        <div>
             <h1 className='text-4xl font-bold  pt-8'>Tasks</h1>
         </div>
 
-       <div className='flex w-full h-48 border border-black rounded-2xl my-4 shadow-lg shadow-gray-600'>
+       <div className='flex flex-wrap w-full h-48 border border-black rounded-2xl shadow-lg shadow-gray-300 '>
 
-        <div className='flex justify-center items-center mx-auto p-4 border-b border-black h-10 w-full'>
+        <div className='flex justify-center items-center border-b border-black w-full' >
           <h1>Open Source Chef</h1>
         </div>
+      
+      
+      <div className='flex items-center bg-green-300'>
+          <h1 className='p-4'>Recipe Database</h1>
+        </div>
+        <div className='flex items-center '>
+          <h1 className='pl-4'>Recipe Scaling</h1>
+        </div>
+        <div className='flex items-center '>
+          <h1 className='pl-4'>Prep Lists</h1>
+        </div>
+        <div className='flex items-center'>
+          <h1 className='pl-4'>Food Costing</h1>
+        </div>
       </div>
+      
 
-
-    </div>
+      </div>
+     
 
     
 
+    
 
+  
     
   )
   
