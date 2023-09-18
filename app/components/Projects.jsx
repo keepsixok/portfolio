@@ -12,11 +12,7 @@ const Projects = () => {
         <div className='flex justify-center items-center border-b border-black h-12 w-full' >
           <h1>Open Source Chef</h1>
         </div>
-      
-      <div className='flex h-2 border-b border-green-600 w-full'>
-        <h1>test</h1>
-       
-        </div>
+     
 
 
       </div>
