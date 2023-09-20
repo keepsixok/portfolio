@@ -7,7 +7,7 @@ const Avatar = () => {
 
   return (
     <div className='flex-row pt-8 pb-4 w-[97%]  mx-auto rounded-t-2xl text-center bg-gradient-to-b from-black from-50% to-50%'>
-        <Image className='mx-auto rounded-full border-[20px] border-black ring-4 ring-emerald-400 ' src="/avatar.png" width={200} height={250} alt="avatar" />
+        <Image className='mx-auto rounded-full border-[20px] border-black ring-4 ring-[#c2d17f] ' src="/avatar.png" width={200} height={250} alt="avatar" />
     </div>
     
      

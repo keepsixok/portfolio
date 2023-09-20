@@ -7,7 +7,7 @@ export default function Home() {
     <div className='w-full mx-auto md:w-[768px] lg:w-[1024px]'>
       <Avatar />
       <Hero />
-      <Projects />
+      {/* <Projects /> */}
     </div>
   )
 }

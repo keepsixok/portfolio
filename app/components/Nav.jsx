@@ -35,7 +35,7 @@ const Nav = () => {
     <div className={!nav ? 'fixed top-0 left-0 w-[60%] border-r border-black bg-white bg-opacity-[97%] h-full ease-in-out duration-500 md:hidden' : 'fixed h-full top-0 left-[-100%] ease-in-out duration-500' }>
     <h1 className='text-2xl font-bold m-4 pt-4'>Mitchell</h1>
     <ul className='uppercase p-4'>
-        <li className='p-4 border-b bg-lime-300 rounded-t-xl border-black'>Home</li>
+        <li className='p-4 border-b border-black'>Home</li>
         <li className='p-4 border-b border-black'>About</li>
         <li className='p-4'>Contact</li>
     </ul>
