@@ -11,12 +11,12 @@ const Nav = () => {
 
   return (
 
-    <div id="nav-container" className='flex items-center mx-auto justify-between w-full h-24 px-4 md:w-[768px] lg:w-[1024px]'>
+    <div className='flex items-center mx-auto justify-between w-full h-16 px-10 md:w-[768px] lg:w-[1024px]'>
         
 
     {/* Title / Logo */}
     <div>
-    <h1 className='uppercase text-2xl font-bold'>ML</h1>
+    <h1 className='uppercase text-2xl font-bold'>OSC</h1>
     </div>
 
     {/* Large Screen Menu */}
@@ -33,7 +33,7 @@ const Nav = () => {
     {!nav ? <AiOutlineClose size={22} /> : <AiOutlineMenu size={22} />}
     </div>
     <div className={!nav ? 'fixed top-0 left-0 w-[60%] border-r border-black bg-white bg-opacity-[97%] h-full ease-in-out duration-500 md:hidden' : 'fixed h-full top-0 left-[-100%] ease-in-out duration-500' }>
-    <h1 className='text-2xl font-bold m-4 pt-4'>Mitchell</h1>
+    <h1 className='text-2xl font-bold m-4 pt-4'>Open Source Chef</h1>
     <ul className='uppercase p-4'>
         <li className='p-4 border-b border-black'>Home</li>
         <li className='p-4 border-b border-black'>About</li>
