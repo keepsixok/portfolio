@@ -1,5 +1,3 @@
-import Banner from './components/Banner'
-import Footer from './components/Footer'
 import Nav from './components/Nav'
 import './globals.css'
 
@@ -13,12 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className=''>
-      {/* <div className='fixed top-0 left-0'>
-        <Banner />
-      </div> */}
+      
       <Nav />
       {children}
-      {/* <Footer /> */}
       </body>
     </html>
   )

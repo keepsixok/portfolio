@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
-
+import Link from 'next/link'
 const Nav = () => {
   const [nav, setNav] = useState(true)
 
@@ -11,20 +11,30 @@ const Nav = () => {
 
   return (
 
-    <div className='flex items-center mx-auto justify-between w-full h-16 px-10 md:w-[768px] lg:w-[1024px]'>
+    <div className='flex items-center mx-auto justify-between w-full h-16 px-4 md:w-[768px] lg:w-[1024px]'>
         
 
     {/* Title / Logo */}
-    <div>
-    <h1 className='uppercase text-2xl font-bold'>OSC</h1>
-    </div>
+    <Link href={'/'}>
+    <div className='flex'>
+    <h1 className='uppercase text-3xl font-bold -rotate-12 pr-1'>f</h1>
+    <h1 className='uppercase text-3xl font-bold -rotate-180 pl-1'>k</h1>
+    <h1 className='uppercase text-3xl font-bold pr-1 pl-1 rotate-6'>u</h1>
+    <h1 className='uppercase text-3xl font-bold pl-1 -rotate-12'>j</h1>
 
+    <h1 className='uppercase text-3xl font-bold pl-1'>e</h1>
+    <h1 className='uppercase text-3xl font-bold rotate-12 pl-1'>F</h1>
+    </div>
+    </Link>
+    
+    
     {/* Large Screen Menu */}
     <div className='hidden md:flex'>
-        <ul className='flex'>
-            <li className='p-4'>Home</li>
-            <li className='p-4'>About</li>
-            <li className='p-4'>Contact</li>
+        <ul className='flex uppercase'>
+            <li className='p-4'><Link href={'/'}>Home</Link></li>
+            <li className='p-4'><Link href={'/about'}>About</Link></li>
+            <li className='p-4'><Link href={'/contact'}>Contact</Link></li>
+            
         </ul>
     </div>
 
@@ -33,11 +43,11 @@ const Nav = () => {
     {!nav ? <AiOutlineClose size={22} /> : <AiOutlineMenu size={22} />}
     </div>
     <div className={!nav ? 'fixed top-0 left-0 w-[60%] border-r border-black bg-white bg-opacity-[97%] h-full ease-in-out duration-500 md:hidden' : 'fixed h-full top-0 left-[-100%] ease-in-out duration-500' }>
-    <h1 className='text-2xl font-bold m-4 pt-4'>Open Source Chef</h1>
+    <h1 className='text-xl uppercase m-4 pt-4'>Open Source Chef</h1>
     <ul className='uppercase p-4'>
-        <li className='p-4 border-b border-black'>Home</li>
-        <li className='p-4 border-b border-black'>About</li>
-        <li className='p-4'>Contact</li>
+            <li className='p-4 border-b border-black'><Link href={'/'}>Home</Link></li>
+            <li className='p-4 border-b border-black'><Link href={'/about'}>About</Link></li>
+            <li className='p-4'><Link href={'/contact'}>Contact</Link></li>
     </ul>
     </div>
     </div>

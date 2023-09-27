@@ -1,13 +1,13 @@
 import Avatar from './components/Avatar'
-import Hero from './components/Hero'
-import Projects from './components/Projects'
+import RecipeCard from './components/recipes/RecipeCard'
+import AddRecipeBTN from './components/recipes/AddRecipeBTN'
 
 export default function Home() {
   return (
     <div className='w-full mx-auto md:w-[768px] lg:w-[1024px]'>
       <Avatar />
-      <Hero />
-      {/* <Projects /> */}
+      <AddRecipeBTN />
+      <RecipeCard />
     </div>
   )
 }

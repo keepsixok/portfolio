@@ -4,7 +4,7 @@ const Projects = () => {
 
     <div className='flex flex-wrap justify-center w-full px-4'>
         <div>
-            <h1 className='text-4xl font-bold pb-4   pt-8'>Tasks</h1>
+            <h1 className='text-4xl font-bold pb-4 pt-8'>Tasks</h1>
         </div>
 
         <div className='flex flex-wrap w-full h-48 border border-black rounded-2xl shadow-lg shadow-gray-300 '>
