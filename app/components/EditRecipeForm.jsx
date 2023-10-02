@@ -22,7 +22,7 @@ export default function EditRecipeForm({ id, title, description }) {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to update topic");
+        throw new Error("Failed to update recipe");
       }
 
       router.refresh();
@@ -39,7 +39,7 @@ export default function EditRecipeForm({ id, title, description }) {
         value={newTitle}
         className="border border-slate-500 px-8 py-2"
         type="text"
-        placeholder="Topic Title"
+        placeholder="Recipe Title"
       />
 
       <input
@@ -47,7 +47,7 @@ export default function EditRecipeForm({ id, title, description }) {
         value={newDescription}
         className="border border-slate-500 px-8 py-2"
         type="text"
-        placeholder="Topic Description"
+        placeholder="Recipe Description"
       />
 
       <button className="bg-green-600 font-bold text-white py-3 px-6 w-fit">
