@@ -17,13 +17,8 @@ const Nav = () => {
     {/* Title / Logo */}
     <Link href={'/'}>
     <div className='flex'>
-    <h1 className='uppercase text-3xl font-bold -rotate-12 pr-1'>f</h1>
-    <h1 className='uppercase text-3xl font-bold -rotate-180 pl-1'>k</h1>
-    <h1 className='uppercase text-3xl font-bold pr-1 pl-1 rotate-6'>u</h1>
-    <h1 className='uppercase text-3xl font-bold pl-1 -rotate-12'>j</h1>
-
-    <h1 className='uppercase text-3xl font-bold pl-1'>e</h1>
-    <h1 className='uppercase text-3xl font-bold rotate-12 pl-1'>F</h1>
+    <h1 className='uppercase text-3xl font-bold'>Open Source Chef</h1>
+   
     </div>
     </Link>
     

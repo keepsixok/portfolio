@@ -1,13 +1,13 @@
+import AddRecipeBtn from './components/AddRecipeBtn'
 import Avatar from './components/Avatar'
-import RecipeCard from './components/recipes/RecipeCard'
-import AddRecipeBTN from './components/recipes/AddRecipeBTN'
+import RecipeList from './components/recipes/RecipeList'
 
 export default function Home() {
   return (
     <div className='w-full mx-auto md:w-[768px] lg:w-[1024px]'>
       <Avatar />
-      <AddRecipeBTN />
-      <RecipeCard />
+      <AddRecipeBtn />
+      <RecipeList />
     </div>
   )
 }
