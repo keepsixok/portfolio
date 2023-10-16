@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 export default function AddRecipe() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-
   const router = useRouter();
 
   const handleSubmit = async (e) => {
@@ -41,7 +40,7 @@ export default function AddRecipe() {
       <input
         onChange={(e) => setTitle(e.target.value)}
         value={title}
-        className="border border-slate-500 px-8 py-2"
+        className="border border-slate-500 px-8 py-2 md:mx-auto w-[60%]"
         type="text"
         placeholder="Recipe Title"
       />
@@ -49,14 +48,14 @@ export default function AddRecipe() {
       <input
         onChange={(e) => setDescription(e.target.value)}
         value={description}
-        className="border border-slate-500 px-8 py-2"
+        className="border border-slate-500 px-8 py-2 md:mx-auto w-[60%]"
         type="text"
         placeholder="Recipe Description"
       />
 
       <button
         type="submit"
-        className="bg-green-600 font-bold text-white py-3 px-6 w-fit"
+        className="bg-green-600 font-bold text-white py-3 px-6 w-fit mx-auto"
       >
         Add Topic
       </button>

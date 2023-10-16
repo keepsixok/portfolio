@@ -26,7 +26,7 @@ export default async function RecipeList() {
       {recipes.map((r) => (
         <div
           key={r._id}
-          className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start"
+          className="p-4 border border-slate-300 rounded-xl my-3 flex justify-between gap-5 items-start"
         >
           <div>
             <h2 className="font-bold text-2xl">{r.title}</h2>
@@ -35,7 +35,7 @@ export default async function RecipeList() {
 
           <div className="flex gap-2">
             <RemoveBtn id={r._id} />
-            <Link href={`/editRecipe/${r._id}`}>
+            <Link href={`/pages/editRecipe/${r._id}`}>
               <HiPencilAlt size={24} />
             </Link>
           </div>
